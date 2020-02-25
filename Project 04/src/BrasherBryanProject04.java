@@ -42,9 +42,9 @@ public class BrasherBryanProject04 {
             if (binStr.charAt(position) == '1') {
                 decimalManual += (int)Math.pow(2,power);
             }
-            power--;  // weight of each digit decreases as we move R -> L
+            power--;  // weight of each digit decreases as we move L -> R
         }
-        
+
         System.out.println(binStr + " in base-2 is equivalent to " + decimalBuiltIn + " in base-10.");
         System.out.println(binStr + " in base-2 is equivalent to " + decimalManual + " in base-10.");
 
