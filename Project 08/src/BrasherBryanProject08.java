@@ -34,7 +34,7 @@ public class BrasherBryanProject08 {
         int iterator = 0;
 
 
-        //double four loop iterates through an imaginary 3x3 matrix
+        //double for loop iterates through an imaginary 3x3 matrix
         //each nth element in this 'matrix' is either H or T depending
         //on the value of nth number in the binary string
         for (int i = 0; i < 3; i++) {
