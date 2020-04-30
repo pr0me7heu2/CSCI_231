@@ -1,5 +1,3 @@
-import org.jetbrains.annotations.Contract;
-
 public class BrasherBryanProject10_MyString {
 
     private char[] data;
