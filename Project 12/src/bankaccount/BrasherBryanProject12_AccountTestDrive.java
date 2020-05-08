@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
 
-public class BrasherBryanProject11_AccountTestDrive {
+public class BrasherBryanProject12_AccountTestDrive {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -44,6 +44,7 @@ public class BrasherBryanProject11_AccountTestDrive {
         }
 
         // test deposit
+        try {
         System.out.println("How much do you want to deposit?");
         temp = input.nextDouble();
         for(Account account : accounts) {
@@ -59,8 +60,14 @@ public class BrasherBryanProject11_AccountTestDrive {
         // test withdraw
         System.out.println("How much do you want to withdraw?");
         temp = input.nextDouble();
-        for(Account account : accounts) {
-            account.withdraw(temp);
+            for (Account account : accounts) {
+                account.withdraw(temp);
+            }
+        }
+        // catches both IllegalAmountException and NoSufficientFundsException
+        // but also InputMismatchException in case user does not enter a number
+        catch (Exception e) {
+            System.out.println(e);
         }
 
         // print out current account information
